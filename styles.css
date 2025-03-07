@@ -1,0 +1,359 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header.hero {
+    text-align: center;
+    background:  no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+header .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+header .btn:hover {
+    background-color: #005f8a;
+}
+section{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.service-box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-box {
+    background: #eef6f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-box .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #023e8a;
+    color: white;
+}
+/* Estilos para la sección de habitaciones */
+.rooms-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.room {
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.room h3 {
+    font-size: 1.5rem;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.room p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+.attractions-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.attraction {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.attraction h3 {
+    font-size: 1.5rem;
+    color: #0077b6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.attraction ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.attraction ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.attraction ul li strong {
+    color: #333;
+}
+
+.attraction p ul li {
+    margin-bottom: 10px;
+}
+
+.attraction p ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Estilos para la sección de ubicación */
+.map-container {
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+/* Estilos para el formulario de consulta */
+.form-container {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #005f8a;
+}
+
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Contenedor principal */
+.kayak-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Para mejorar la responsividad */
+}
+
+/* Estilo de la imagen */
+.kayak-container img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Estilo de la tarjeta de contenido */
+.kayak-card {
+    width: 45%;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kayak-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.kayak-card .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #008CBA; /* Color azul para el botón */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.kayak-card .btn:hover {
+    background-color: #005f6b; /* Oscurecer el botón al pasar el cursor */
+}
+
+/* Responsividad para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .kayak-container {
+        flex-direction: column;
+    }
+
+    .kayak-container img,
+    .kayak-card {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .kayak-card {
+        margin-top: 20px;
+    }
+}
+
+/* Sección de la piscina */
+#piscina {
+    padding: 50px 15%;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#piscina h2 {
+    margin-bottom: 30px;
+    color: #005f6b;
+}
+
+.pool-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pool-container img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.pool-description {
+    width: 45%;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pool-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.pool-description .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #008CBA;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.pool-description .btn:hover {
+    background-color: #005f6b;
+}
+
+/* Responsividad para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .pool-container {
+        flex-direction: column;
+    }
+
+    .pool-container img,
+    .pool-description {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .pool-description {
+        margin-top: 20px;
+    }
+}
+
+

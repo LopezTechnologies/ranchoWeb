@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hialeah Ranch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero" style="background-image: url('images/entrada.jpg');">
+        <h1>Hialeah Ranch</h1>
+        <p>Descubre el paraíso frente al mar</p>
+        <a href="#services" class="btn">Conoce Más</a>
+    </header>
+    <main>
+        <section id="services" class="services-section">
+            <h2>Servicios</h2>
+            <div class="service-box-container">
+                <div class="service-box">
+                    <i class="icon">🏖️</i>
+                    <h3>Escapada de lujo</h3>
+                    <p>Relájate cerca del mar en habitaciones cómodas y elegantes.</p>
+                </div>
+                <div class="service-box">
+                    <i class="icon">🛶</i>
+                    <h3>Tours en Kayak</h3>
+                    <p>Embárcate en una aventura inigualable explorando las aguas serenas y los paisajes escondidos que solo se descubren en kayak.</p>
+                </div>
+                <div class="service-box">
+                    <i class="icon">🛏️</i>
+                    <h3>Habitaciones</h3>
+                    <p>Relájate en nuestras cómodas y elegantes habitaciones, diseñadas para brindarte un descanso inigualable. </p>
+                </div>
+                
+                <div class="service-box">
+                    <i class="icon">🏊‍♂️</i>
+                    <h3>Piscina</h3>
+                    <p>Relájate y disfruta de nuestra impresionante piscina, rodeada de un entorno natural exquisito. Perfecta para nadar, tomar el sol o simplemente descansar después de un día de aventuras.</p>
+                </div>
+            </div>
+        </section>
+        <section id="piscina" class="section">
+            <h2>Nuestra Piscina</h2>
+            <div class="pool-container">
+                <img src="images/piscina.jpg" alt="Piscina">
+                <div class="pool-description">
+                    <p>Relájate y disfruta de nuestra impresionante piscina, rodeada de un entorno natural exquisito. Perfecta para nadar, tomar el sol o simplemente descansar después de un día de aventuras.</p>
+                    <!--<a href="pool-details.html" class="btn">Más detalles</a>-->
+                </div>
+            </div>
+        </section>
+        
+        <section id="rooms" class="section">
+            <h2>Habitaciones</h2>
+            <div class="rooms-container">
+                <div class="room">
+                    <img src="images/cuarto1.jpg" alt="Habitación de lujo">
+                    <h3>Habitación 1</h3>
+                    <p>Disfruta de una estancia cómoda con vista al mar y todas las comodidades modernas.</p>
+                </div>
+                <div class="room">
+                    <img src="images/cuarto2.jpg" alt="Habitación estándar">
+                    <h3>Habitación 2</h3>
+                    <p>Una opción acogedora y económica para una estancia relajante.</p>
+                </div>
+               
+            </div>
+        </section>  
+        <section id="kayak-tours" class="section">
+            <h2>Tours en Kayak</h2>
+            <div class="kayak-container">
+                <img src="images/kayaks.jpg" alt="Tours en Kayak">
+                <div class="kayak-card">
+                    <p>Embárcate en una aventura inigualable explorando las aguas serenas y los paisajes escondidos que solo se descubren en kayak.</p>
+                    <a href="kayak-tours.html" class="btn">Más detalles</a>
+                </div>
+            </div>
+        </section>        
+        <section id="nearby-attractions" class="section">
+            <h2>Descubre los alrededores</h2>
+            <div class="attractions-container">
+                <div class="attraction">
+                    <h3>🏖️ Playas Cercanas</h3>
+                    <ul>
+                        <li><strong>Playa El Tunco:</strong> Perfecta para surfistas y vida nocturna.</li>
+                        <li><strong>Playa El Sunzal:</strong> Ideal para nadar y disfrutar de la tranquilidad.</li>
+                        <li><strong>Playa La Bocana:</strong> Destino para surfistas expertos.</li>
+                    </ul>
+                </div>
+                <div class="attraction">
+                    <h3>🍽️ Restaurantes</h3>
+                    <ul>
+                        <li><strong>Café Sunzal:</strong> Comida local y vistas espectaculares.</li>
+                        <li><strong>La Hola Beto's:</strong> Mariscos frescos con un toque especial.</li>
+                        <li><strong>El Tunco Vibes:</strong> Ambiente relajado y deliciosa gastronomía internacional.</li>
+                    </ul>
+                </div>
+            
+            </div>
+        </section>
+        <section id="location" class="section">
+            <h2>Ubicación</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.840123456789!2d-89.323456!3d13.488123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6334567890abcd%3A0x1234567890abcdef!2sRancho%20de%20Playa!5e0!3m2!1ses!2ssv!4v1611234567890!5m2!1ses!2ssv"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+            <p>Rancho de Playa, La Libertad, El Salvador</p>
+        </section>
+        <section id="inquiry-form" class="section">
+            <h2>¿Tienes alguna consulta?</h2>
+            <p>¡Estamos aquí para ayudarte! Completa el formulario y nos pondremos en contacto contigo pronto.</p>
+            <div class="form-container">
+                <form id="consultationForm">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    
+                    <label for="topic">Asunto:</label>
+                    <select id="topic" name="topic">
+                        <option value="general">Consulta General</option>
+                        <option value="reservation">Reserva</option>
+                        <option value="support">Soporte Técnico</option>
+                    </select>
+                    
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Hialeah Ranch. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,281 @@
+/* Estilos generales */
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header.hero {
+    text-align: center;
+    background:  no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+header .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+header .btn:hover {
+    background-color: #005f8a;
+}
+
+h1, h2, h3 {
+    color: #005f6b;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Botón general */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #008CBA;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005f6b;
+}
+
+/* Sección hero */
+.tour-hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.tour-hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* Sección de detalles del tour */
+.tour-details {
+    padding: 50px 15%;
+    background-color: #f4f4f4;
+}
+
+.details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tour-info, .tour-gallery {
+    flex: 1 1 45%;
+    margin: 20px 0;
+}
+
+.tour-info h2 {
+    margin-bottom: 20px;
+}
+
+.tour-info p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tour-info ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.tour-info ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #008CBA;
+}
+
+.tour-gallery h3 {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: calc(50% - 10px);
+    border-radius: 5px;
+}
+
+/* Sección de reserva */
+.tour-reservation {
+    padding: 50px 15%;
+}
+
+.tour-reservation h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tour-reservation form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tour-reservation label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.tour-reservation input,
+.tour-reservation textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tour-reservation input[type="submit"] {
+    cursor: pointer;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.tour-reservation input[type="submit"]:hover {
+    background-color: #005f6b;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 15%;
+    text-align: center;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    width: 24px;
+}
+/* Estilos para la sección de video del tour */
+.tour-video {
+    padding: 50px 15%;
+    text-align: center;
+    background-color: #f4f4f4; /* Fondo claro para destacar la sección */
+}
+
+.tour-video h3 {
+    color: #005f6b;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.tour-video video {
+    width: 100%;
+    max-width: 800px; /* Limitar el ancho máximo del video */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    .tour-video {
+        padding: 20px 5%;
+    }
+
+    .tour-video h3 {
+        font-size: 24px;
+    }
+}
+
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    .details-container {
+        flex-direction: column;
+    }
+    .tour-info, .tour-gallery {
+        flex: 1 1 100%;
+    }
+    .gallery img {
+        width: 100%;
+    }
+    .tour-hero img {
+        height: 300px;
+    }
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    .hero-content p {
+        font-size: 18px;
+    }
+}
+
