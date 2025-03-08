@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: #f4f4f4; /* Arena */
     color: #333;
 }
 
 header.hero {
     text-align: center;
-    background:  no-repeat center center/cover;
+    background: no-repeat center center/cover;
     color: white;
     padding: 100px 20px;
 }
@@ -18,7 +18,7 @@ header .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #0077b6;
+    background-color: #008CBA; /* Azul Claro */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -26,9 +26,10 @@ header .btn {
 }
 
 header .btn:hover {
-    background-color: #005f8a;
+    background-color: #005f6b; /* Azul Marino */
 }
-section{
+
+section {
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -36,7 +37,7 @@ section{
 .services-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #ffffff;
+    background-color: #ffffff; /* Blanco */
 }
 
 .service-box-container {
@@ -62,9 +63,10 @@ section{
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #023e8a;
+    background-color: #005f6b; /* Azul Marino */
     color: white;
 }
+
 /* Estilos para la sección de habitaciones */
 .rooms-container {
     text-align: center;
@@ -76,7 +78,7 @@ footer {
 
 .room {
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #ffffff; /* Blanco */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -90,7 +92,7 @@ footer {
 
 .room h3 {
     font-size: 1.5rem;
-    color: #0077b6;
+    color: #008CBA; /* Azul Claro */
     margin-bottom: 10px;
 }
 
@@ -99,6 +101,7 @@ footer {
     color: #555;
     line-height: 1.6;
 }
+
 .attractions-container {
     text-align: center;
     display: grid;
@@ -108,7 +111,7 @@ footer {
 }
 
 .attraction {
-    background-color: #ffffff;
+    background-color: #ffffff; /* Blanco */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -117,7 +120,7 @@ footer {
 
 .attraction h3 {
     font-size: 1.5rem;
-    color: #0077b6;
+    color: #008CBA; /* Azul Claro */
     margin-bottom: 15px;
     text-align: center;
 }
@@ -163,12 +166,13 @@ footer {
     color: #555;
     margin-top: 10px;
 }
+
 /* Estilos para el formulario de consulta */
 .form-container {
     margin: 20px auto;
     max-width: 600px;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #ffffff; /* Blanco */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -192,7 +196,7 @@ form input, form select, form textarea {
 }
 
 form button {
-    background-color: #0077b6;
+    background-color: #008CBA; /* Azul Claro */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -204,9 +208,8 @@ form button {
 }
 
 form button:hover {
-    background-color: #005f8a;
+    background-color: #005f6b; /* Azul Marino */
 }
-
 
 .section h2 {
     text-align: center;
@@ -236,7 +239,7 @@ form button:hover {
 .kayak-card {
     width: 45%;
     max-width: 500px;
-    background-color: #f9f9f9;
+    background-color: #ffffff; /* Blanco */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -252,7 +255,7 @@ form button:hover {
 .kayak-card .btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #008CBA; /* Color azul para el botón */
+    background-color: #008CBA; /* Azul Claro */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -284,13 +287,13 @@ form button:hover {
 /* Sección de la piscina */
 #piscina {
     padding: 50px 15%;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Arena */
     text-align: center;
 }
 
 #piscina h2 {
     margin-bottom: 30px;
-    color: #005f6b;
+    color: #005f6b; /* Azul Marino */
 }
 
 .pool-container {
@@ -311,7 +314,7 @@ form button:hover {
 .pool-description {
     width: 45%;
     max-width: 500px;
-    background-color: #f9f9f9;
+    background-color: #ffffff; /* Blanco */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -327,7 +330,7 @@ form button:hover {
 .pool-description .btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #008CBA;
+    background-color: #008CBA; /* Azul Claro */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -336,7 +339,7 @@ form button:hover {
 }
 
 .pool-description .btn:hover {
-    background-color: #005f6b;
+    background-color: #005f6b; /* Azul Marino */
 }
 
 /* Responsividad para dispositivos móviles */

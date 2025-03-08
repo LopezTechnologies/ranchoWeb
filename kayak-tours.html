@@ -2,8 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del Tour en Kayak</title>
-    <link rel="stylesheet" href="kayak-styles.css"> <!-- Asegúrate de enlazar correctamente tu archivo CSS -->
+    <meta name="description" content="Embárcate en una emocionante travesía en kayak por aguas cristalinas, rodeado de vegetación exuberante y vida silvestre. Ideal para todos los niveles, desde principiantes hasta expertos.">
+    <link rel="stylesheet" href="kayak-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
@@ -11,12 +14,12 @@
     <main>
         <!-- Sección de presentación del tour -->
         <section class="tour-hero">
-            <img src="images/bestmar.png" alt="Aventura en Kayak">
+            <img src="images/bestmar.png" alt="Personas disfrutando de una aventura en kayak">
             <div class="hero-content">
                 <h1>Tour en Kayak: Aventura en el mar</h1>
                 <p>Explora paisajes inigualables y vive una experiencia inolvidable en contacto directo con la naturaleza.</p>
                 <a href="#reserva" class="btn">Reserva Ahora</a>
-                    <a href="index.html" class="btn">Regresar a la Página Principal</a>
+                <a href="index.html" class="btn">Regresar a la Página Principal</a>
             </div>
         </section>
 
@@ -50,17 +53,23 @@
                     <a href="#reserva" class="btn">Reserva tu Lugar</a>
                 </div>
 
-                <!-- Galería de imágenes -->
-                <div class="tour-gallery">
-                    <h3>Galería de Imágenes</h3>
-                    <div class="gallery">
+               <!-- Galería de imágenes -->
+               <div class="tour-gallery">
+                <h3>Galería de Imágenes</h3>
+                <div class="carousel">
+                    <div class="carousel-images">
                         <img src="images/kayak-start.jpg" alt="Paisaje durante el tour">
                         <img src="images/mar6.png" alt="Paisaje durante el tour">
                         <img src="images/mar1.png" alt="Grupo en kayaks">
                         <img src="images/mar5.png" alt="Fauna local">
                         <img src="images/mar3.png" alt="Atardecer en el río">
                     </div>
+                    <div class="carousel-buttons">
+                        <button id="prevBtn">&lt;</button>
+                        <button id="nextBtn">&gt;</button>
+                    </div>
                 </div>
+            </div>
               
             </div>
         </section>
@@ -69,7 +78,7 @@
         <section class="tour-reservation" id="reserva">
             <h2>Reserva tu Aventura</h2>
             <p>Completa el formulario para asegurar tu lugar en nuestro próximo tour en kayak.</p>
-            <form action="procesar-reserva.php" method="post">
+            <form id="reservaForm">
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -88,21 +97,20 @@
                 <label for="mensaje">Comentarios Adicionales:</label>
                 <textarea id="mensaje" name="mensaje" rows="4"></textarea>
 
-                <input type="submit" value="Enviar Reserva" class="btn">
+                <button type="submit" class="btn">Enviar Reserva</button>
             </form>
         </section>
     </main>
 
-    <!-- Botón para regresar a la página principal -->
-
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2023 Aventuras en Kayak. Todos los derechos reservados.</p>
+        <p>&copy; 2023 Rancho hialeah. Todos los derechos reservados.</p>
         <div class="social-media">
-            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
 </body>
+<script src="kayak_script.js"></script>
 </html>
